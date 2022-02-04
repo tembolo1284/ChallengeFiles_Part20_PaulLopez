@@ -2,7 +2,7 @@
 
 This is the Solidity Smart Contract application for Challenge 20! So frightening how powerful this is!  I begin by creating
 a withdraw() function that checks that the recipient is either AccountOne or AccountTwo. If the recipient is neither one I quit and 
-alert the user with the a message that they don't own the account. Most importantly from my perspective, I don't waste any gas because I used the require() function to do this!  Another check I do is that balance must be greater than or equal to the amount that the user wants to withdraw. If it isn't I display the message "Insufficient funds!".  I also make the lastToWithdraw variable set to the recipient if it isn't already.
+alert the user with a message that they don't own the account. Most importantly from my perspective, I don't waste any gas because I used the require() function to do this!  Another check I do is that balance must be greater than or equal to the amount that the user wants to withdraw. If it isn't I display the message "Insufficient funds!".  I also make the lastToWithdraw variable set to the recipient if it isn't already.
 
 I also create a deposit() function that allows a user to put money into the account.  This is pretty straightforward and I just use
 address(this).balance to do it. 
